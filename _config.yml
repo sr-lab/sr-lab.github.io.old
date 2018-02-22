@@ -1,7 +1,5 @@
-title: Software Reliability Lab
-description: Group of researchers interested in formal methods and verification techniques for software reliability.
-show_downloads: false
-github:
-  public: true
+title: Leap Day theme
+description: Leap Day is a theme for GitHub Pages.
+show_downloads: true
 google_analytics:
-theme: jekyll-theme-tactile
+theme: jekyll-theme-leap-day
