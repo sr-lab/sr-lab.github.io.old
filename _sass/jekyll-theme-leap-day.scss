@@ -66,7 +66,7 @@ ul{
 
 strong {
   font-weight: bold;
-  color: #333;
+  /* color: #333; */ /* Let's not put everything bold in the same color. */
 }
 
 .wrapper {
@@ -87,10 +87,11 @@ blockquote {
 }
 
 code {
-  font-family: 'Lucida Sans', Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
+  /* Add a mono Windows font up in here. */
+  font-family: Consolas, 'Lucida Sans', Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
   font-size:13px;
   color:#efefef;
-  text-shadow: 0px 1px 0px #000;
+  /* text-shadow: 0px 1px 0px #000; */ /* Remove this text shadow on code. */
   margin: 0 4px;
   padding: 2px 6px;
   background: #333;
@@ -190,31 +191,33 @@ header {
   margin-right:-382px;
   position: fixed;
   top: 115px;
-  background: #cccccc;
-  border: 1px solid #b5b5b5;
+  background: #dddddd;
+  border: 1px solid #c5c5c5;
   box-shadow: 0px 1px 3px rgba(0,0,0,.25);
   border-radius: 0px 2px 2px 0px;
   padding-right: 10px;
 
   .button {
-    border: 1px solid #dba500;
-    background: linear_gradient(rgb(255, 231, 136), rgb(255, 206, 56));
+	/* Change up button colors. */
+    border: 1px solid #33a533;
+    background: linear_gradient(rgb(64, 158, 85), rgb(64, 158, 85));
     border-radius: 2px;
     box-shadow: inset 0px 1px 0px rgba(255,255,255,.4), 0px 1px 1px rgba(0,0,0,.1);
-    background-color: #FFE788;
+    background-color: #4fbc63;
     margin-left: 5px;
     padding: 10px 12px;
     margin-top: 6px;
     line-height:14px;
     font-size:14px;
-    color:#333;
+    color:#fff;
     font-weight: bold;
     display:inline-block;
     text-align:center;
 
     &:hover {
-      background: linear_gradient(rgb(255, 231, 136), rgb(255, 231, 136));
-      background-color: #ffeca0;
+	  /* Change up button colors. */
+      background: linear_gradient(rgb(64, 158, 85), rgb(77, 188, 101));
+      background-color: #4dbc65;
     }
   }
 
@@ -226,7 +229,16 @@ header {
     margin-top: 6px;
     line-height:14px;
     font-size:14px;
-    background-color: #FFE788;
+	/* Change up button colors. */
+    background-color: #4fbc63;
+	/* Add text shadow here. */
+    text-shadow: 1px 1px rgba(0,0,0,.4);
+
+    &:hover {
+	  /* Change up button colors. */
+      background: linear_gradient(rgb(64, 158, 85), rgb(77, 188, 101));
+      background-color: #4dbc65;
+    }
   }
 
   .downloads {
@@ -266,7 +278,7 @@ header {
     right:7px;
     top:7px;
     display: block;
-    background: url(../images/octocat-logo.svg);
+    background: url(../images/octocat-logo.svg); /* SVG to avoid scaling issues. */
   }
 }
 
