@@ -10,6 +10,16 @@ var sectionHeight = function() {
   }
 }
 
+var scrollToHeadingInUrl = function() {
+  var url = window.location.href,
+      inx = url.indexOf("#");
+  
+  if (inx !== -1) {
+    var hash = url.substring(inx + 1);
+    $("a[href='#" + hash + "']").click();
+  }
+}
+
 $(window).resize(sectionHeight);
 
 $(function() {
@@ -28,6 +38,8 @@ $(function() {
   });
 
   sectionHeight();
+  
+  scrollToHeadingInUrl();
 
   $('img').on('load', sectionHeight);
 });
