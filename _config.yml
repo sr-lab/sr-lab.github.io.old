@@ -1,5 +1,7 @@
 title: Software Reliability Lab
 description: Group of researchers interested in verification techniques for software reliability.
 show_downloads: false
+show_project: false
+show_profile: true
 google_analytics:
 theme: jekyll-theme-leap-day
