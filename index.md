@@ -2,7 +2,7 @@
 layout: default
 ---
 
-Add text.
+Add text, more coming soon.
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
