@@ -1,6 +1,5 @@
 ---
 layout: default
-show_home: true
 ---
 
 # Password Quality

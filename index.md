@@ -1,5 +1,6 @@
 ---
 layout: default
+show_home: false
 ---
 
 # Overview
