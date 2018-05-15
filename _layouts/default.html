@@ -23,6 +23,9 @@
 
       <div id="banner">
         <span id="logo"></span>
+        {% if page.show_home %}
+        <a href="/" class="button fork"><strong>Home</strong></a>
+        {% endif %}
         {% if site.show_project %}
         <a href="{{ site.github.repository_url }}" class="button fork"><strong>View On GitHub</strong></a>
         {% endif %}
