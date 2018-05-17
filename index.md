@@ -10,4 +10,4 @@ We're a group of researchers interested in formal methods and verification techn
 We make a number of different utilities available as open-source software, usually originally written for research purposes.
 
 ## Password Quality
-Browse [password quality utilities](password-quality).
+From our research into password strength/quality, we make a number of small research utilities available. Browse [password quality utilities](password-quality).
