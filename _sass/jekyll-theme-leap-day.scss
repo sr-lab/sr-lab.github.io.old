@@ -183,15 +183,14 @@ header {
   }
 }
 
-a.home-btn {
+%button {
   border: 1px solid #33a533;
-  background: linear_gradient(rgb(64, 158, 85), rgb(64, 158, 85));
+  background: linear-gradient(rgb(77, 188, 101), rgb(64, 158, 85));
   border-radius: 2px;
   box-shadow: inset 0px 1px 0px rgba(255,255,255,.4), 0px 1px 1px rgba(0,0,0,.1);
   background-color: #4fbc63;
   padding: 10px 12px;
   line-height:14px;
-  margin-bottom: 16px;
   font-size:14px;
   color:#fff;
   font-weight: bold;
@@ -201,9 +200,15 @@ a.home-btn {
 
   &:hover {
     /* Change up button colors. */
-    background: linear_gradient(rgb(64, 158, 85), rgb(77, 188, 101));
+    background: linear-gradient(rgb(87, 198, 111), rgb(64, 158, 85));
     background-color: #4dbc65;
   }
+}
+
+/* Left-hand side home button. */
+a.home-btn {
+  @extend %button;
+  margin-bottom: 16px;
 }
 
 #banner {
@@ -221,47 +226,15 @@ a.home-btn {
   padding-right: 10px;
 
   .button {
-	/* Change up button colors. */
-    border: 1px solid #33a533;
-    background: linear_gradient(rgb(64, 158, 85), rgb(64, 158, 85));
-    border-radius: 2px;
-    box-shadow: inset 0px 1px 0px rgba(255,255,255,.4), 0px 1px 1px rgba(0,0,0,.1);
-    background-color: #4fbc63;
-    margin-left: 5px;
-    padding: 10px 12px;
+    @extend %button;
     margin-top: 6px;
-    line-height:14px;
-    font-size:14px;
-    color:#fff;
-    font-weight: bold;
-    display:inline-block;
-    text-align:center;
-
-    &:hover {
-	  /* Change up button colors. */
-      background: linear_gradient(rgb(64, 158, 85), rgb(77, 188, 101));
-      background-color: #4dbc65;
-    }
+    margin-left: 5px;
   }
 
   .fork {
     position:fixed;
     left:50%;
     margin-left:-325px;
-    padding: 10px 12px;
-    margin-top: 6px;
-    line-height:14px;
-    font-size:14px;
-	/* Change up button colors. */
-    background-color: #4fbc63;
-	/* Add text shadow here. */
-    text-shadow: 1px 1px rgba(0,0,0,.4);
-
-    &:hover {
-	  /* Change up button colors. */
-      background: linear_gradient(rgb(64, 158, 85), rgb(77, 188, 101));
-      background-color: #4dbc65;
-    }
   }
 
   .downloads {
