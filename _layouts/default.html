@@ -23,9 +23,6 @@
 
       <div id="banner">
         <span id="logo"></span>
-        {% if page.show_home %}
-        <a href="/" class="button fork"><strong>Home</strong></a>
-        {% endif %}
         {% if site.show_project %}
         <a href="{{ site.github.repository_url }}" class="button fork"><strong>View On GitHub</strong></a>
         {% endif %}
@@ -45,11 +42,20 @@
 
     <div class="wrapper">
       <nav>
+        {% if page.show_home %}
+		<!-- home button -->
+		<a href="/" class="home-btn"><strong>Home</strong></a>
+        {% endif %}
         <ul></ul>
       </nav>
       <section>
         {{ content }}
-
+        {% if page.show_home %}
+		<!-- end-of-page home link -->
+		<p>
+			Head back to our <a href="/">homepage</a>.
+		</p>
+        {% endif %}
       </section>
       <footer>
         {% if site.github.is_project_page %}
