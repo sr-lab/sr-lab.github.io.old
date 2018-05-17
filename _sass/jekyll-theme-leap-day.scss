@@ -191,12 +191,19 @@ a.home-btn {
   background-color: #4fbc63;
   padding: 10px 12px;
   line-height:14px;
-  font-size:14px;
   margin-bottom: 16px;
+  font-size:14px;
   color:#fff;
   font-weight: bold;
   display:inline-block;
   text-align:center;
+  text-shadow: 1px 1px rgba(0,0,0,.4);
+
+  &:hover {
+    /* Change up button colors. */
+    background: linear_gradient(rgb(64, 158, 85), rgb(77, 188, 101));
+    background-color: #4dbc65;
+  }
 }
 
 #banner {
