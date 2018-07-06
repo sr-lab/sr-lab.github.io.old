@@ -6,6 +6,9 @@ show_home: true
 # Password Quality
 A number of utilities we use for research into password quality/strength are listed below.
 
+## Pwned Passwords API Wrapper
+A library that can be used to query [Troy Hunt's](https://troyhunt.com/) [Pwned Passwords API](https://haveibeenpwned.com/API/v2) or a local copy of its database. The database file is >30GB in size so a library/utility like this is necessary in many cases to meaningfully interact with it, (opening it in most text editors will just cause an error or crash the program). [Check it out on GitHub...](https://github.com/sr-lab/pwned-api-wrapper).
+
 ## Ampasamp
 Ampasamp (**a** **m**inimal **pa**ssword **samp**ler) is a software utility designed to sample passwords from large breached password datasets that comply with a set of password policies. [Check it out on GitHub...](https://github.com/sr-lab/ampasamp)
 
