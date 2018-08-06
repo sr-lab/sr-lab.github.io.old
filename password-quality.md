@@ -20,3 +20,6 @@ Extensible batch password entropy calculator. This utility will take a text file
 
 ## Guesser
 Sometimes you just need a super-simple list-based password guesser that will take a plaintext list of guesses, a plaintext list of attacks and tell you how many guesses you got right. Takes two lists, one of guesses and one to be guessed, and tells you how many matches turn up. Does some other small stuff like deduplicating guesses. [Check it out on GitHub...](https://github.com/sr-lab/guesser)
+
+## Count Expander
+A utility that re-hydrates password lists that contain counts. Also contains a utility that will do the opposite and dehydrate a raw password dump into a file of counts (frequencies) against passwords. [Check it out on GitHub...](https://github.com/sr-lab/count-expander)
