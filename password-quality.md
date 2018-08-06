@@ -23,3 +23,6 @@ Sometimes you just need a super-simple list-based password guesser that will tak
 
 ## Count Expander
 A utility that re-hydrates password lists that contain counts. Also contains a utility that will do the opposite and dehydrate a raw password dump into a file of counts (frequencies) against passwords. [Check it out on GitHub...](https://github.com/sr-lab/count-expander)
+
+## Jump Mapper
+By training a model with an existing breached data set of 4-digit PINs and their frequencies, can we correctly predict the strength of previously unseen PINs using only keypad jumps? [Check it out on GitHub...](https://github.com/sr-lab/jump-mapper).
